@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+:root {
+    --cor-principal:#856845;
+    --cor1: #656741;
+    --cor2: #476449;
+    --cor3: #2f5d54;
+    --preto: #000000;
+    --branco: #FFFFFF; 
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Crimson';
+}
+
+
