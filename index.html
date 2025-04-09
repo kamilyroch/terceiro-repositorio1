@@ -1,88 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Página principal </title>
+    <title> Página Principal </title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    
-</head>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="styles.css"> </head>
 
 <body>
-<header class="p-5" >
+    <header class="p-5" >
         <h2>Cabeçalho</h2>
 
-<nav class="container d-flex justify-content-between align-items-center">
-    <img src="" alt=""> <!-- Colocar uma imagem aqui -->
-    <ul class="nav mt-5">
-        <li class="nav-item"> <a href="#inicio"> Início </a> </li>
-        <li class="nav-item"> <a href="#galeria"> Galeria </a> </li>
-        <li class="nav-item"> <a href="#contato"> Contato </a> </li>
-    </ul>
-</nav>
-   </header> 
+        <nav class="container d-flex justify-content-between align-items-center">
+            <img src="img/logo.png" alt="Logotipo da Tropicália" class="nav-img" loading="lazy" > 
+            <ul class="nav mt-5">
+                <li class="nav-item"> <a href="#inicio"> Início </a> </li>
+                <li class="nav-item"> <a href="#galeria"> Galeria </a> </li>
+                <li class="nav-item"> <a href="#contato"> Contato </a> </li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <h2>Corpo da página</h2> 
+        <h2>Corpo da página</h2>
         <section id="inicio" class="my-5">
 
         </section>
 
-        <section id="aDefinir" class="my-5 pt-6">  
+        <section id="tropicalia" class="my-5 pt-6 secao-tropicalia"> <!-- SEU TEMA do seu Site-->
+            <div class="container d-flex align-items-center" >
+                <div class="col-5" >
+                    <h2>O que foi a Tropicália?</h2>
+                    <p class="p-2" > A Tropicália, também conhecida como Tropicalismo, foi um movimento cultural brasileiro que surgiu na década de 1960, tendo seu auge entre 1967 e 1968. Esse movimento abrangeu várias expressões artísticas, como música, o cinema, o teatro e as artes plásticas, e reve como principal característica a mistura de elementos da cultura brasileira tradicional com influências estrangeiras, especialmente do rock e da música pop.</p>
+                </div>
+            </div>
 
         </section>
 
         <section id="galeria">
+            <h2 class="text-center pt-5"> Galeria </h2>
+            <div class="container p-3 mt-3 fundo-galeria">
+                <div class="col-md-4">
+                    <img src="img/lossy-page1-640px-Jorge_Ben_e_o_Trio_Mocotó_no_Teatro_da_Lagoa,_1971.tif.jpg" alt="Imagem Jorge Ben e o Trio Mocotó" class="img-fluid rounded-5" loading="lazy">
+                </div>
+                <div class="col-md-4">
+                    <img src="img/lossy-page1-640px-Os_Mutantes_2.tif.jpg" alt="Imagem do grupo Os Mutantes" class="img-fluid rounded-5" loading="lazy">
+                </div>
+            </div>
 
         </section>
 
         <section id="contato">
-            <div class="container p-5 d-flex justify-content-center">
-        <!-- Caixa do formulario com 60% de largura-->
-        <div class="col-md-8 col-lg-10 rounded-5 formulario"> 
-            <h2 mb-3> Entre em contato</h2>
-            <form>
-                <div class="form-group mb-3">
-                    <label  for="nome"> Nome </label>
-                    <input type=" text" id="nome" name="nome" lass="form-control rounded-3 mt-1" placeholder="Digite seu nome completo" >
+            <div class="container p-5 d-flex justify-content-center" >
+                <!-- Caixa do formulário com 60% de largura-->
+                <div class="col-md-8 col-lg-10 rounded-5 formulario">
+                    <h2 class="mb-3" >Entre em contato</h2>
+                    <form>
+                        <div class="form-group mb-3">
+                            <label  for="nome"> Nome </label>
+                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1"  placeholder="Digite seu nome completo" >
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email"> Email </label>
+                            <input type="email" name="email" id="email" class="form-control rounded-3 mt-1">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="mensagem"> Mensagem </label>
+                            <textarea name="mensagem" id="mensagem" class="form-control rounded-4 mt-2"  rows="4" placeholder="Escreva sua mensagem"  ></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill tamanho-botao"  >Enviar mensagem</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="form-group mb-3">
-                    <label for="email"> Email </label>
-                    <input type="email" name="email" id="email" class="form-control rounded-3 mt-1">
-                </div>
-                <div class="form-group mb-3">
-                    <label for="mensagem" id="mensagem" class="form-control rounded-4 mt-2" rows="4" placeholder="Escreva sua mensagem"  ></textarea>
-                    </div>
-                    <div class="d-grid gap-2">
-                        <button type="submit" class="btn btn-primary btn-lg rounded-pill tamanho-botao"  >Enviar mensagem</button>
-                    </div>
-                 </form>
-
-                 <div>
-                        
-              </div>
-                    
+            </div>
         </section>
-     
+
     </main>
     <footer class="text-center p-3 fst-italic">
-                       <h2>Rodapé</h2>
-                       <p>Acesse nossas redes:</p>
-                       <i class="bi bi-whatsapp"></i>
-                       <i class="bi bi-instagram"></i>
-                       <i class="bi bi-tiktok"></i>
-                       <p class="mt-3">Desenvolvido por Kamily fernanda Vaz Rocha. Projeto fictício sem fins comerciais</p>
-                   </footer>
-                </body>
-                
-                </html>
-                     
-                         
-     
-     
-     
-     
-               
-               
-               
-               
+        <h2>Rodapé</h2>
+        <p>Acesse nossas redes:</p>
+        <i class="bi bi-whatsapp"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-tiktok"></i>
+        <p class="mt-3">Desenvolvido por Gerson Cesar Grobe de Miranda. Projeto fictício sem fins comerciais</p>
+    </footer>
+</body>
+
+</html>

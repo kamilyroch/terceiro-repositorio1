@@ -9,9 +9,34 @@
     --branco: #FFFFFF; 
 
 } 
-body {
+
+ody {
     font-size: 1rem;
-    font-family: 'Crimson';
+    font-family: 'Montserrat'; /*o nome da sua fonte*/
+}
+
+section {
+    padding-bottom: 5rem;
+}
+
+.display-4 {
+    text-shadow: -5px 5px var(--laranja-claro);
+}
+
+#tropicalia {
+    position: relative;
+    padding-top: 5rem;
+    margin-top: 3rem;
+    background: var(--cor2);
+    background-size: 180px 180px; /* Ajuste o tamanho conforme necessário*/
+}
+
+#tropicalia .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1; /* Garante que o conteúdo fica acima das imagens de backgronde se houverem */
 }
 
 
@@ -20,4 +45,37 @@ body {
 
 
 
-.fo
+
+
+
+
+#contato {
+    background: var(--cor-principal);
+    background-size: cover;
+    padding: 4rem 0;
+}
+
+.formulario{
+    background-color: var(--branco);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-weight: bold;
+}
+
+.formulario button {
+    background-color: var(--cor3);
+    border: none;
+    font-weight: bold;
+}
+
+.form-control {
+    background-color: var(--cor2);
+}
+
+
+
+
+
+
+
