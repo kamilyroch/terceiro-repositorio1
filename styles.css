@@ -8,9 +8,9 @@
     --preto: #000000;
     --branco: #FFFFFF; 
 
-} 
+}
 
-ody {
+body {
     font-size: 1rem;
     font-family: 'Montserrat'; /*o nome da sua fonte*/
 }
@@ -18,6 +18,43 @@ ody {
 section {
     padding-bottom: 5rem;
 }
+
+header {
+    background-color: var(--branco);
+}
+
+.nav-link {
+    color: var(--laranja-claro);
+    font-weight: 600;
+}
+
+.inicio-fundo {
+    background-image: url(img/4965007.jpg);
+    background-size: cover;
+    background-position: right;
+    border-radius: 80px;
+    width: 100%;
+    height: 606px;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+.esquerda-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:1rem;
+}
+
+.botao-inicio {
+    background-color: var(--laranja-claro);
+    border-radius: 30px;
+    border: none;
+    width: 14em;
+    height: 3em;
+    align-content: center;
+}
+
 
 .display-4 {
     text-shadow: -5px 5px var(--laranja-claro);
@@ -72,10 +109,3 @@ section {
 .form-control {
     background-color: var(--cor2);
 }
-
-
-
-
-
-
-
