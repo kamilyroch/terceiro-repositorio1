@@ -7,6 +7,18 @@ document.addEventListener('DOMContentLoaded', function() {
     opcoesDeacessibilidade.classList.toggle('apresenta-lista')
 
     const botaoSelecionado = botaoDeAcessibilidade.getAttribute('aria-expanded') ===
-    botaoDeAcessibilidade.setAttribute('aria-expanded'), !botaoSelecionado
+    botaoDeAcessibilidade.setAttribute('aria-expanded', !botaoSelecionado)
    })
+
+const diminuiFonteBotao = document.getElementById('aumentar-fonte')
+const diminuiFonteBotao = document.getElementById('diminuir-fonte')
+
+aumentaFonteBotao.addEventListener('click', function() {
+   tamanhoAtualFonte += 0.1;
+   document.body.style.fontSize = '${tamanhoAtualFonte}rem'
 })
+diminuirFonteBotao.addEventListener('click', function() {
+   tamanhoAtualFonte += 0.1;
+   document.body.style.fontSize = '${tamanhoAtualFonte}rem'
+})
+})   
