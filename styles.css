@@ -134,7 +134,47 @@ header {
 .alto-contraste header,
 .alto-contraste footer,
 .alto-contraste .formulario {
-    background-color: var(--branco);
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+.alto-contraste .nav-link {
+    color: var(--cor2)
+}
+
+.alto-contraste .botao-inicio,
+.alto-contraste .formulario button,
+.alto-contraste .bnt-primary {
+    background-color: var(--cor3);
     color: var(--preto);
 }
-.alto-contraste
+
+.alto-contraste #extinçao {
+    background: none;
+}
+
+.alto-contraste #galeria {
+    background-color: var(--preto);
+}
+
+.alto-contraste .fundo-galeria {
+    background: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.alto-contraste #extinção {
+    background-color: var(--preto);
+}
+
