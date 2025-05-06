@@ -8,6 +8,7 @@
     --preto: #000000;
     --branco: #FFFFFF; 
 
+
 }
 
 body {
@@ -55,12 +56,11 @@ header {
     align-content: center;
 }
 
-
 .display-4 {
     text-shadow: -5px 5px var(--laranja-claro);
 }
 
-#tropicalia {
+#dinossauro {
     position: relative;
     padding-top: 5rem;
     margin-top: 3rem;
@@ -68,7 +68,7 @@ header {
     background-size: 180px 180px; /* Ajuste o tamanho conforme necessário*/
 }
 
-#tropicalia .container {
+#dinossauro .container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,20 +76,10 @@ header {
     z-index: 1; /* Garante que o conteúdo fica acima das imagens de backgronde se houverem */
 }
 
-
-
-
-
-
-
-
-
-
-
-#contato {
-    background: var(--cor-principal);
+#contato{
+    background:var(--cor-principal);
     background-size: cover;
-    padding: 4rem 0;
+    padding: 0cap;
 }
 
 .formulario{
@@ -101,11 +91,50 @@ header {
 }
 
 .formulario button {
-    background-color: var(--cor3);
+    background-color: var(--cor2);
     border: none;
-    font-weight: bold;
+    fort-weight: bold;
 }
 
 .form-control {
     background-color: var(--cor2);
 }
+
+.menu-acessibilidade {
+    position: fixed;
+    top: 2rem;
+    right: 20px;
+    z-index: 1000;
+}
+
+.rotacao-boato {
+    transform: rotate(-90deg);
+    transform-origin: right center;
+}
+
+.opcoes-acessibilidade {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.opcoes-acessibilidade button {
+    margin-bottom: 5px;
+}
+
+.apresenta-lista {
+    display: none;
+}
+
+.alto-contraste{
+    background-color: #2f5d54;
+    color: #656741;
+}
+
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .formulario {
+    background-color: var(--branco);
+    color: var(--preto);
+}
+.alto-contraste
