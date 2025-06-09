@@ -8,7 +8,6 @@
     --preto: #000000;
     --branco: #FFFFFF; 
 
-
 }
 
 body {
@@ -24,8 +23,12 @@ header {
     background-color: var(--branco);
 }
 
+.nav-imagem {
+
+}
+
 .nav-link {
-    color: var(--laranja-claro);
+    color: var(--cor-principal);
     font-weight: 600;
 }
 
@@ -48,7 +51,7 @@ header {
 }
 
 .botao-inicio {
-    background-color: var(--laranja-claro);
+    background-color: var(--cor2);
     border-radius: 30px;
     border: none;
     width: 14em;
@@ -56,8 +59,9 @@ header {
     align-content: center;
 }
 
+
 .display-4 {
-    text-shadow: -5px 5px var(--laranja-claro);
+    text-shadow: -5px 5px var(--cor-principal);
 }
 
 #dinossauro {
@@ -79,13 +83,13 @@ header {
 #contato{
     background:var(--cor-principal);
     background-size: cover;
-    padding: 0cap;
+    padding: 4rem;
 }
 
 .formulario{
     background-color: var(--branco);
     padding: 2rem;
-    border-radius: 10px;
+    border-radius: 0 0 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     font-weight: bold;
 }
@@ -157,9 +161,6 @@ header {
     background-color: var(--preto);
 }
 
-.alto-contraste .fundo-galeria {
-    background: none;
-}
 
 
 
@@ -174,7 +175,4 @@ header {
 
 
 
-.alto-contraste #extinção {
-    background-color: var(--preto);
-}
 
